@@ -1,345 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>homiestay booking</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    
+<meta charset="UTF-8"/>
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>homiestay booking</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+<link rel="stylesheet" href="./assets/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"/>
   </head>
   <body>
-    <header class="header">
-      <div class="wrapper">
-        <div class="left">
-          <a href="/"> <h1 class="logo">Homiestay.com</h1></a>
-        </div>
-        <div class="right"><a class="booked reversed-style" href="#">Booked</a><a class="login-button" href="#">Login</a><a class="signup-button" href="#">Signup</a></div>
-      </div>
-    </header>
+    <!-- Messenger Plugin chat Code -->
+<div id="fb-root"></div><!-- Your Plugin chat code -->
+<div class="fb-customerchat" id="fb-customer-chat"></div>
+<script>
+  var chatbox = document.getElementById('fb-customer-chat')
+  chatbox.setAttribute('page_id', '425537250931445')
+  chatbox.setAttribute('attribution', 'biz_inbox')
+  
+</script><!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function () {
+    FB.init({
+      xfbml: true,
+      version: 'v13.0',
+    })
+  }
+  ;(function (d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0]
+    if (d.getElementById(id)) return
+    js = d.createElement(s)
+    js.id = id
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js'
+    fjs.parentNode.insertBefore(js, fjs)
+  })(document, 'script', 'facebook-jssdk')
+  
+</script>
+<header class="header">
+  <div class="wrapper">
+    <div class="left"><a href="/">
+        <h1 class="logo">Homiestay.com</h1></a></div>
+    <div class="right"><a class="booked reversed-style" href="#">Booked</a><a class="login-button" href="#">Login</a><a class="signup-button" href="#">Signup</a></div>
+  </div>
+</header>
     <main class="main">
-      <section class="section-keyvisual">
-        <div class="wrapper">
-          <h2 class="keyvisual-title">A lifetime of discounts? It's Genius.</h2>
-          <p class="keyvisual-text">Get rewarded for your travels - unlock instant savings of 10% or more with a free Booking.com account</p>
-          <div class="search-form-wrapper">
-            <form class="search-form">
-              <label class="input-wrap"
-                ><i class="search-icon fa-solid fa-magnifying-glass"></i>
-                <input class="keyword-input" name="keyword" type="text" placeholder="Tìm kiếm theo địa điểm" />
-              </label>
-              <label class="date-picker"
-                ><i class="date-icon fa-solid fa-calendar-days"></i>
-                <input class="date-picker-input js-date-picker" name="checkin-date" type="text" placeholder="Checkin - checkout" />
-              </label>
-            </form>
-          </div>
-        </div>
-      </section>
-      <section class="section-browse">
-        <div class="wrapper">
-          <h2 class="section-title">Browse by property type</h2>
-          <div class="product-list-wrapper">
-            <ul class="product-list js-slider-01">
-              <li class="product-item">
-                <a class="product-link" href="./detail/index.html">
-                  <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt="" /></figure>
-                  <h3 class="name">Melia Ho Tram Beach Resort</h3>
-                  <p class="detail">Thành phố Vũng Tàu</p></a
-                >
-              </li>
-              <li class="product-item">
-                <a class="product-link" href="./detail/index.html">
-                  <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt="" /></figure>
-                  <h3 class="name">Melia Ho Tram Beach Resort</h3>
-                  <p class="detail">Thành phố Vũng Tàu</p></a
-                >
-              </li>
-              <li class="product-item">
-                <a class="product-link" href="./detail/index.html">
-                  <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt="" /></figure>
-                  <h3 class="name">Melia Ho Tram Beach Resort</h3>
-                  <p class="detail">Thành phố Vũng Tàu</p></a
-                >
-              </li>
-              <li class="product-item">
-                <a class="product-link" href="./detail/index.html">
-                  <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt="" /></figure>
-                  <h3 class="name">Melia Ho Tram Beach Resort</h3>
-                  <p class="detail">Thành phố Vũng Tàu</p></a
-                >
-              </li>
-              <li class="product-item">
-                <a class="product-link" href="./detail/index.html">
-                  <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt="" /></figure>
-                  <h3 class="name">Melia Ho Tram Beach Resort</h3>
-                  <p class="detail">Thành phố Vũng Tàu</p></a
-                >
-              </li>
-              <li class="product-item">
-                <a class="product-link" href="./detail/index.html">
-                  <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt="" /></figure>
-                  <h3 class="name">Melia Ho Tram Beach Resort</h3>
-                  <p class="detail">Thành phố Vũng Tàu</p></a
-                >
-              </li>
-              <li class="product-item">
-                <a class="product-link" href="./detail/index.html">
-                  <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt="" /></figure>
-                  <h3 class="name">Melia Ho Tram Beach Resort</h3>
-                  <p class="detail">Thành phố Vũng Tàu</p></a
-                >
-              </li>
-              <li class="product-item">
-                <a class="product-link" href="./detail/index.html">
-                  <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt="" /></figure>
-                  <h3 class="name">Melia Ho Tram Beach Resort</h3>
-                  <p class="detail">Thành phố Vũng Tàu</p></a
-                >
-              </li>
-              <li class="product-item">
-                <a class="product-link" href="./detail/index.html">
-                  <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt="" /></figure>
-                  <h3 class="name">Melia Ho Tram Beach Resort</h3>
-                  <p class="detail">Thành phố Vũng Tàu</p></a
-                >
-              </li>
-              <li class="product-item">
-                <a class="product-link" href="./detail/index.html">
-                  <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt="" /></figure>
-                  <h3 class="name">Melia Ho Tram Beach Resort</h3>
-                  <p class="detail">Thành phố Vũng Tàu</p></a
-                >
-              </li>
-              <li class="product-item">
-                <a class="product-link" href="./detail/index.html">
-                  <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt="" /></figure>
-                  <h3 class="name">Melia Ho Tram Beach Resort</h3>
-                  <p class="detail">Thành phố Vũng Tàu</p></a
-                >
-              </li>
-              <li class="product-item">
-                <a class="product-link" href="./detail/index.html">
-                  <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt="" /></figure>
-                  <h3 class="name">Melia Ho Tram Beach Resort</h3>
-                  <p class="detail">Thành phố Vũng Tàu</p></a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="section-banner">
-        <div class="wrapper">
-          <h2 class="section-title">Cities</h2>
-          <div class="banner-wrapper">
-            <div class="banner-list">
-              <a class="banner-item" href="./detail/index.html">
-                <h3 class="banner-title">Ho Chi Minh City</h3>
-                <p class="banner-description">425 khách sạn</p></a
-              ><a class="banner-item" href="./detail/index.html">
-                <h3 class="banner-title">Ho Chi Minh City</h3>
-                <p class="banner-description">425 khách sạn</p></a
-              >
-            </div>
-            <div class="banner-list">
-              <a class="banner-item" href="./detail/index.html">
-                <h3 class="banner-title">Da Lat</h3>
-                <p class="banner-description">398 khách sạn</p></a
-              ><a class="banner-item" href="./detail/index.html">
-                <h3 class="banner-title">Da Lat</h3>
-                <p class="banner-description">398 khách sạn</p></a
-              ><a class="banner-item" href="./detail/index.html">
-                <h3 class="banner-title">Da Lat</h3>
-                <p class="banner-description">398 khách sạn</p></a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-news hidden">
-        <div class="wrapper">
-          <h2 class="section-title">Daily news</h2>
-          <div class="news-wrapper">
-            <ul class="news-list">
-              <a class="news-item" href="#">
-                <h3 class="news-title">The top 5 cities for vegan travelers</h3>
-                <p class="news-description">Vegan-friendly eateries abound in these travel destinations…</p></a
-              ><a class="news-item" href="#">
-                <h3 class="news-title">The top 5 cities for vegan travelers</h3>
-                <p class="news-description">Vegan-friendly eateries abound in these travel destinations…</p></a
-              ><a class="news-item" href="#">
-                <h3 class="news-title">The top 5 cities for vegan travelers</h3>
-                <p class="news-description">Vegan-friendly eateries abound in these travel destinations…</p></a
-              ><a class="news-item" href="#">
-                <h3 class="news-title">The top 5 cities for vegan travelers</h3>
-                <p class="news-description">Vegan-friendly eateries abound in these travel destinations…</p></a
-              >
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="section-ads hidden">
-        <div class="wrapper">
-          <h2 class="hidden">tieu de quang cao</h2>
-          <img class="banner-ads" src="/src/img/ads1.jpg" alt="tieu de quang cao" width="1200" height="339" />
-        </div>
-      </section>
-      <section class="section-news hidden">
-        <div class="wrapper">
-          <h2 class="section-title">Daily news</h2>
-          <div class="news-wrapper">
-            <ul class="news-list">
-              <a class="news-item" href="#">
-                <h3 class="news-title">The top 5 cities for vegan travelers</h3>
-                <p class="news-description">Vegan-friendly eateries abound in these travel destinations…</p></a
-              ><a class="news-item" href="#">
-                <h3 class="news-title">The top 5 cities for vegan travelers</h3>
-                <p class="news-description">Vegan-friendly eateries abound in these travel destinations…</p></a
-              ><a class="news-item" href="#">
-                <h3 class="news-title">The top 5 cities for vegan travelers</h3>
-                <p class="news-description">Vegan-friendly eateries abound in these travel destinations…</p></a
-              ><a class="news-item" href="#">
-                <h3 class="news-title">The top 5 cities for vegan travelers</h3>
-                <p class="news-description">Vegan-friendly eateries abound in these travel destinations…</p></a
-              >
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="section-products hidden">
-        <div class="wrapper">
-          <div class="sidebar"></div>
-          <div class="common-list">
-            <div class="list-item">
-              <a class="item-image left" href="#"><img src="https://cf.bstatic.com/xdata/images/hotel/square600/284154025.webp?k=148946f5a3e082b0fad20628d269b17b15546dc14805a0c49e83e8a7a8bf7b43&amp;o=&amp;s=1" alt="" /></a>
-              <div class="right">
-                <a class="item-name" href="#"> <h3>The Arrivals Tower-Near Airport-10 stars</h3></a>
-                <div class="address-info"><span class="address">Phu Nhuan, Ho Chi Minh City</span><a class="map-link" href="#">Show on map</a><span class="distance">3.7 km from center</span></div>
-                <div class="item-description">Located in Ho Chi Minh City, an 18-minute walk from Tan Dinh Market and 1.6 miles from War Remnants Museum, The Arrivals Tower-Near Airport-10 stars has accommodations with free WiFi, air...</div>
-              </div>
-            </div>
-            <div class="list-item">
-              <a class="item-image left" href="#"><img src="https://cf.bstatic.com/xdata/images/hotel/square600/284154025.webp?k=148946f5a3e082b0fad20628d269b17b15546dc14805a0c49e83e8a7a8bf7b43&amp;o=&amp;s=1" alt="" /></a>
-              <div class="right">
-                <a class="item-name" href="#"> <h3>The Arrivals Tower-Near Airport-10 stars</h3></a>
-                <div class="address-info"><span class="address">Phu Nhuan, Ho Chi Minh City</span><a class="map-link" href="#">Show on map</a><span class="distance">3.7 km from center</span></div>
-                <div class="item-description">Located in Ho Chi Minh City, an 18-minute walk from Tan Dinh Market and 1.6 miles from War Remnants Museum, The Arrivals Tower-Near Airport-10 stars has accommodations with free WiFi, air...</div>
-              </div>
-            </div>
-            <div class="list-item">
-              <a class="item-image left" href="#"><img src="https://cf.bstatic.com/xdata/images/hotel/square600/284154025.webp?k=148946f5a3e082b0fad20628d269b17b15546dc14805a0c49e83e8a7a8bf7b43&amp;o=&amp;s=1" alt="" /></a>
-              <div class="right">
-                <a class="item-name" href="#"> <h3>The Arrivals Tower-Near Airport-10 stars</h3></a>
-                <div class="address-info"><span class="address">Phu Nhuan, Ho Chi Minh City</span><a class="map-link" href="#">Show on map</a><span class="distance">3.7 km from center</span></div>
-                <div class="item-description">Located in Ho Chi Minh City, an 18-minute walk from Tan Dinh Market and 1.6 miles from War Remnants Museum, The Arrivals Tower-Near Airport-10 stars has accommodations with free WiFi, air...</div>
-              </div>
-            </div>
-            <div class="list-item">
-              <a class="item-image left" href="#"><img src="https://cf.bstatic.com/xdata/images/hotel/square600/284154025.webp?k=148946f5a3e082b0fad20628d269b17b15546dc14805a0c49e83e8a7a8bf7b43&amp;o=&amp;s=1" alt="" /></a>
-              <div class="right">
-                <a class="item-name" href="#"> <h3>The Arrivals Tower-Near Airport-10 stars</h3></a>
-                <div class="address-info"><span class="address">Phu Nhuan, Ho Chi Minh City</span><a class="map-link" href="#">Show on map</a><span class="distance">3.7 km from center</span></div>
-                <div class="item-description">Located in Ho Chi Minh City, an 18-minute walk from Tan Dinh Market and 1.6 miles from War Remnants Museum, The Arrivals Tower-Near Airport-10 stars has accommodations with free WiFi, air...</div>
-              </div>
-            </div>
-            <img class="banner-ads" src="/src/img/ads1.jpg" alt="tieu de quang cao" width="700" height="195" />
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="wrapper">
-        <div class="left">
-          <a href="/"> <h2 class="logo">Homiestay.com</h2></a>
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-link" href="#"> <i class="fa-brands fa-facebook-square"></i><span>Facebook</span></a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="#"> <i class="fa-brands fa-instagram-square"></i><span>Instagram</span></a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="#"> <i class="fa-brands fa-twitter-square"></i><span>Twitter</span></a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="#"> <i class="fa-brands fa-youtube-square"></i><span>Youtube</span></a>
-            </li>
-          </ul>
-        </div>
-        <div class="right">
-          <ul class="footer-column">
-            <li class="footer-title">
-              <h3>Về Homiestay.com</h3>
-            </li>
-            <li class="footer-item"><a class="footer-link" href="#">Thông tin liên hệ</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">Quy trình đặt phòng</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">Chính sách đổi trả</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">Tuyển dụng</a></li>
-          </ul>
-          <ul class="footer-column">
-            <li class="footer-title">
-              <h3>Chính sách</h3>
-            </li>
-            <li class="footer-item"><a class="footer-link" href="#">Chính sách quyền riêng tư</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">Trợ giúp</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">Đăng ký nơi nghỉ của bạn</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">Khu vực báo chí</a></li>
-          </ul>
-          <ul class="footer-column">
-            <li class="footer-title">
-              <h3>Vấn đề khác</h3>
-            </li>
-            <li class="footer-item"><a class="footer-link" href="#">Đặt cọc</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">Combo tiết kiệm</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">Đặt quảng cáo</a></li>
-            <li class="footer-item"><a class="footer-link" href="#">Tải ứng dụng</a></li>
-          </ul>
+      
+<section class="section-keyvisual">
+  <div class="wrapper">
+    <h2 class="keyvisual-title">A lifetime of discounts? It's Genius.</h2>
+    <p class="keyvisual-text">Get rewarded for your travels - unlock instant savings of 10% or more with a free Booking.com account</p>
+    <div class="search-form-wrapper">
+      <form class="search-form">
+        <label class="input-wrap"><i class="search-icon fa-solid fa-magnifying-glass"></i>
+          <input class="keyword-input" name="keyword" type="text" placeholder="Tìm kiếm theo địa điểm"/>
+        </label>
+        <label class="date-picker"><i class="date-icon fa-solid fa-calendar-days"></i>
+          <input class="date-picker-input js-date-picker" name="checkin-date" type="text" placeholder="Checkin - checkout"/>
+        </label>
+      </form>
+    </div>
+  </div>
+</section>
+<section class="section-browse">
+  <div class="wrapper">
+    <div class="covid-notice"><i class="fa-solid fa-circle-info"></i>
+      <p>Một số điểm lưu ý khi thuê phòng trong tình hình dịch covid-19.</p><a class="covid-notice-link" href="#">Xem thêm</a>
+      <button class="close-button js-close-button"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <h2 class="section-title">Browse by property type</h2>
+    <div class="product-list-wrapper">
+      <div class="product-list js-slider-01">
+        <div class="product-item"><a class="product-link" href="/detail/">
+            <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt=""/></figure>
+            <h3 class="name">Melia Ho Tram Beach Resort</h3>
+            <p class="detail">Thành phố Vũng Tàu</p></a></div>
+        <div class="product-item"><a class="product-link" href="/detail/">
+            <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt=""/></figure>
+            <h3 class="name">Melia Ho Tram Beach Resort</h3>
+            <p class="detail">Thành phố Vũng Tàu</p></a></div>
+        <div class="product-item"><a class="product-link" href="/detail/">
+            <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt=""/></figure>
+            <h3 class="name">Melia Ho Tram Beach Resort</h3>
+            <p class="detail">Thành phố Vũng Tàu</p></a></div>
+        <div class="product-item"><a class="product-link" href="/detail/">
+            <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt=""/></figure>
+            <h3 class="name">Melia Ho Tram Beach Resort</h3>
+            <p class="detail">Thành phố Vũng Tàu</p></a></div>
+        <div class="product-item"><a class="product-link" href="/detail/">
+            <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt=""/></figure>
+            <h3 class="name">Melia Ho Tram Beach Resort</h3>
+            <p class="detail">Thành phố Vũng Tàu</p></a></div>
+        <div class="product-item"><a class="product-link" href="/detail/">
+            <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt=""/></figure>
+            <h3 class="name">Melia Ho Tram Beach Resort</h3>
+            <p class="detail">Thành phố Vũng Tàu</p></a></div>
+        <div class="product-item"><a class="product-link" href="/detail/">
+            <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt=""/></figure>
+            <h3 class="name">Melia Ho Tram Beach Resort</h3>
+            <p class="detail">Thành phố Vũng Tàu</p></a></div>
+        <div class="product-item"><a class="product-link" href="/detail/">
+            <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt=""/></figure>
+            <h3 class="name">Melia Ho Tram Beach Resort</h3>
+            <p class="detail">Thành phố Vũng Tàu</p></a></div>
+        <div class="product-item"><a class="product-link" href="/detail/">
+            <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt=""/></figure>
+            <h3 class="name">Melia Ho Tram Beach Resort</h3>
+            <p class="detail">Thành phố Vũng Tàu</p></a></div>
+        <div class="product-item"><a class="product-link" href="/detail/">
+            <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt=""/></figure>
+            <h3 class="name">Melia Ho Tram Beach Resort</h3>
+            <p class="detail">Thành phố Vũng Tàu</p></a></div>
+        <div class="product-item"><a class="product-link" href="/detail/">
+            <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt=""/></figure>
+            <h3 class="name">Melia Ho Tram Beach Resort</h3>
+            <p class="detail">Thành phố Vũng Tàu</p></a></div>
+        <div class="product-item"><a class="product-link" href="/detail/">
+            <figure class="product-image"><img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt=""/></figure>
+            <h3 class="name">Melia Ho Tram Beach Resort</h3>
+            <p class="detail">Thành phố Vũng Tàu</p></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-banner">
+  <div class="wrapper">
+    <h2 class="section-title">Cities</h2>
+    <div class="banner-wrapper">
+      <div class="banner-list"><a class="banner-item" href="#">
+          <h3 class="banner-title">Ho Chi Minh City</h3>
+          <p class="banner-description">425 khách sạn</p></a><a class="banner-item" href="#">
+          <h3 class="banner-title">Ho Chi Minh City</h3>
+          <p class="banner-description">425 khách sạn</p></a>
+      </div>
+      <div class="banner-list"><a class="banner-item" href="#">
+          <h3 class="banner-title">Da Lat</h3>
+          <p class="banner-description">398 khách sạn</p></a><a class="banner-item" href="#">
+          <h3 class="banner-title">Da Lat</h3>
+          <p class="banner-description">398 khách sạn</p></a><a class="banner-item" href="#">
+          <h3 class="banner-title">Da Lat</h3>
+          <p class="banner-description">398 khách sạn</p></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-news">
+  <div class="wrapper">
+    <h2 class="section-title">Daily news</h2>
+    <div class="news-wrapper">
+      <ul class="news-list"><a class="news-item" href="#">
+          <h3 class="news-title">The top 5 cities for vegan travelers</h3>
+          <p class="news-description">Vegan-friendly eateries abound in these travel destinations…</p></a><a class="news-item" href="#">
+          <h3 class="news-title">The top 5 cities for vegan travelers</h3>
+          <p class="news-description">Vegan-friendly eateries abound in these travel destinations…</p></a><a class="news-item" href="#">
+          <h3 class="news-title">The top 5 cities for vegan travelers</h3>
+          <p class="news-description">Vegan-friendly eateries abound in these travel destinations…</p></a><a class="news-item" href="#">
+          <h3 class="news-title">The top 5 cities for vegan travelers</h3>
+          <p class="news-description">Vegan-friendly eateries abound in these travel destinations…</p></a>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="section-ads">
+  <div class="wrapper">
+    <h2 class="hidden">tieu de quang cao</h2><img class="banner-ads" src="/src/img/ads1.jpg" alt="tieu de quang cao" width="1200" height="339"/>
+  </div>
+</section>
+<section class="section-news">
+  <div class="wrapper">
+    <h2 class="section-title">Daily news</h2>
+    <div class="news-wrapper">
+      <ul class="news-list"><a class="news-item" href="#">
+          <h3 class="news-title">The top 5 cities for vegan travelers</h3>
+          <p class="news-description">Vegan-friendly eateries abound in these travel destinations…</p></a><a class="news-item" href="#">
+          <h3 class="news-title">The top 5 cities for vegan travelers</h3>
+          <p class="news-description">Vegan-friendly eateries abound in these travel destinations…</p></a><a class="news-item" href="#">
+          <h3 class="news-title">The top 5 cities for vegan travelers</h3>
+          <p class="news-description">Vegan-friendly eateries abound in these travel destinations…</p></a><a class="news-item" href="#">
+          <h3 class="news-title">The top 5 cities for vegan travelers</h3>
+          <p class="news-description">Vegan-friendly eateries abound in these travel destinations…</p></a>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="section-products hidden">
+  <div class="wrapper">
+    <div class="sidebar"></div>
+    <div class="common-list">
+      <div class="list-item"><a class="item-image left" href="#"><img src="https://cf.bstatic.com/xdata/images/hotel/square600/284154025.webp?k=148946f5a3e082b0fad20628d269b17b15546dc14805a0c49e83e8a7a8bf7b43&amp;o=&amp;s=1" alt=""/></a>
+        <div class="right"><a class="item-name" href="#">
+            <h3>The Arrivals Tower-Near Airport-10 stars</h3></a>
+          <div class="address-info"><span class="address">Phu Nhuan, Ho Chi Minh City</span><a class="map-link" href="#">Show on map</a><span class="distance">3.7 km from center</span></div>
+          <div class="item-description">Located in Ho Chi Minh City, an 18-minute walk from Tan Dinh Market and 1.6 miles from War Remnants Museum, The Arrivals Tower-Near Airport-10 stars has accommodations with free WiFi, air...</div>
         </div>
       </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="https://npmcdn.com/flatpickr/dist/l10n/vn.js"></script>
-    <script src="./assets/script.js"></script>
-
-    <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat"></div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat')
-      chatbox.setAttribute('page_id', '1430014297125266')
-      chatbox.setAttribute('attribution', 'biz_inbox')
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function () {
-        FB.init({
-          xfbml: true,
-          version: 'v13.0',
-        })
-      }
-      ;(function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0]
-        if (d.getElementById(id)) return
-        js = d.createElement(s)
-        js.id = id
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js'
-        fjs.parentNode.insertBefore(js, fjs)
-      })(document, 'script', 'facebook-jssdk')
-    </script>
+      <div class="list-item"><a class="item-image left" href="#"><img src="https://cf.bstatic.com/xdata/images/hotel/square600/284154025.webp?k=148946f5a3e082b0fad20628d269b17b15546dc14805a0c49e83e8a7a8bf7b43&amp;o=&amp;s=1" alt=""/></a>
+        <div class="right"><a class="item-name" href="#">
+            <h3>The Arrivals Tower-Near Airport-10 stars</h3></a>
+          <div class="address-info"><span class="address">Phu Nhuan, Ho Chi Minh City</span><a class="map-link" href="#">Show on map</a><span class="distance">3.7 km from center</span></div>
+          <div class="item-description">Located in Ho Chi Minh City, an 18-minute walk from Tan Dinh Market and 1.6 miles from War Remnants Museum, The Arrivals Tower-Near Airport-10 stars has accommodations with free WiFi, air...</div>
+        </div>
+      </div>
+      <div class="list-item"><a class="item-image left" href="#"><img src="https://cf.bstatic.com/xdata/images/hotel/square600/284154025.webp?k=148946f5a3e082b0fad20628d269b17b15546dc14805a0c49e83e8a7a8bf7b43&amp;o=&amp;s=1" alt=""/></a>
+        <div class="right"><a class="item-name" href="#">
+            <h3>The Arrivals Tower-Near Airport-10 stars</h3></a>
+          <div class="address-info"><span class="address">Phu Nhuan, Ho Chi Minh City</span><a class="map-link" href="#">Show on map</a><span class="distance">3.7 km from center</span></div>
+          <div class="item-description">Located in Ho Chi Minh City, an 18-minute walk from Tan Dinh Market and 1.6 miles from War Remnants Museum, The Arrivals Tower-Near Airport-10 stars has accommodations with free WiFi, air...</div>
+        </div>
+      </div>
+      <div class="list-item"><a class="item-image left" href="#"><img src="https://cf.bstatic.com/xdata/images/hotel/square600/284154025.webp?k=148946f5a3e082b0fad20628d269b17b15546dc14805a0c49e83e8a7a8bf7b43&amp;o=&amp;s=1" alt=""/></a>
+        <div class="right"><a class="item-name" href="#">
+            <h3>The Arrivals Tower-Near Airport-10 stars</h3></a>
+          <div class="address-info"><span class="address">Phu Nhuan, Ho Chi Minh City</span><a class="map-link" href="#">Show on map</a><span class="distance">3.7 km from center</span></div>
+          <div class="item-description">Located in Ho Chi Minh City, an 18-minute walk from Tan Dinh Market and 1.6 miles from War Remnants Museum, The Arrivals Tower-Near Airport-10 stars has accommodations with free WiFi, air...</div>
+        </div>
+      </div><img class="banner-ads" src="/src/img/ads1.jpg" alt="tieu de quang cao" width="700" height="195"/>
+    </div>
+  </div>
+</section>
+    </main>
+    
+<footer class="footer">
+  <div class="wrapper">
+    <div class="left"><a href="/">
+        <h2 class="logo">Homiestay.com</h2></a>
+      <ul class="social-list">
+        <li class="social-item"><a class="social-link" href="#"> <i class="fa-brands fa-facebook-square"></i><span>Facebook</span></a></li>
+        <li class="social-item"><a class="social-link" href="#"> <i class="fa-brands fa-instagram-square"></i><span>Instagram</span></a></li>
+        <li class="social-item"><a class="social-link" href="#"> <i class="fa-brands fa-twitter-square"></i><span>Twitter</span></a></li>
+        <li class="social-item"><a class="social-link" href="#"> <i class="fa-brands fa-youtube-square"></i><span>Youtube</span></a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <ul class="footer-column">
+        <li class="footer-title">
+          <h3>Về Homiestay.com</h3>
+        </li>
+        <li class="footer-item"><a class="footer-link" href="#">Thông tin liên hệ</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Quy trình đặt phòng</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Chính sách đổi trả</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Tuyển dụng</a></li>
+      </ul>
+      <ul class="footer-column">
+        <li class="footer-title">
+          <h3>Chính sách</h3>
+        </li>
+        <li class="footer-item"><a class="footer-link" href="#">Chính sách quyền riêng tư</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Trợ giúp</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Đăng ký nơi nghỉ của bạn</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Khu vực báo chí</a></li>
+      </ul>
+      <ul class="footer-column">
+        <li class="footer-title">
+          <h3>Vấn đề khác</h3>
+        </li>
+        <li class="footer-item"><a class="footer-link" href="#">Đặt cọc</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Combo tiết kiệm</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Đặt quảng cáo</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Tải ứng dụng</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/vn.js"></script>
+<script src="./assets/script.js"></script>
   </body>
 </html>

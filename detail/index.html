@@ -1,684 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>homiestay booking</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
-    <link rel="stylesheet" href="../assets/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    
+<meta charset="UTF-8"/>
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>homiestay booking</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+<link rel="stylesheet" href="../assets/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"/>
   </head>
   <body>
     <!-- Messenger Plugin chat Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Plugin chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat"></div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat')
-      chatbox.setAttribute('page_id', '425537250931445')
-      chatbox.setAttribute('attribution', 'biz_inbox')
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function () {
-        FB.init({
-          xfbml: true,
-          version: 'v13.0',
-        })
-      }
-      ;(function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0]
-        if (d.getElementById(id)) return
-        js = d.createElement(s)
-        js.id = id
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js'
-        fjs.parentNode.insertBefore(js, fjs)
-      })(document, 'script', 'facebook-jssdk')
-    </script>
-    <div id="app">
-      <header class="header">
-        <div class="wrapper">
-          <div class="left">
-            <a href="/"> <h1 class="logo">Homiestay.com</h1></a>
-          </div>
-          <div class="right"><a class="booked reversed-style" href="#">Booked</a><a class="login-button" href="#">Login</a><a class="signup-button" href="#">Signup</a></div>
+<div id="fb-root"></div><!-- Your Plugin chat code -->
+<div class="fb-customerchat" id="fb-customer-chat"></div>
+<script>
+  var chatbox = document.getElementById('fb-customer-chat')
+  chatbox.setAttribute('page_id', '425537250931445')
+  chatbox.setAttribute('attribution', 'biz_inbox')
+  
+</script><!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function () {
+    FB.init({
+      xfbml: true,
+      version: 'v13.0',
+    })
+  }
+  ;(function (d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0]
+    if (d.getElementById(id)) return
+    js = d.createElement(s)
+    js.id = id
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js'
+    fjs.parentNode.insertBefore(js, fjs)
+  })(document, 'script', 'facebook-jssdk')
+  
+</script>
+<header class="header">
+  <div class="wrapper">
+    <div class="left"><a href="/">
+        <h1 class="logo">Homiestay.com</h1></a></div>
+    <div class="right"><a class="booked reversed-style" href="#">Booked</a><a class="login-button" href="#">Login</a><a class="signup-button" href="#">Signup</a></div>
+  </div>
+</header>
+    <main class="main">
+      
+<div class="product-detail-container">
+  <article class="article-product-detail">
+    <div class="product-images-wrapper">
+      <div class="top-info">
+        <h1 class="product-name">Khách sạn Liên Viễn Phát</h1>
+        <p class="name-alt">Lien Vien Phat Hotel</p>
+        <div class="address"><i class="fa-solid fa-location-dot"></i>
+          <address>7A/1 Bùi Thị Xuân, Phường 2, Phường 2, Đà Lạt, Tỉnh Lâm Đồng, Việt Nam, 670000</address>
         </div>
-      </header>
-      <main class="main">
-        <div class="product-detail-container">
-          <article class="article-product-detail">
-            <div class="product-images-wrapper">
-              <div class="top-info">
-                <h1 class="product-name">Khách sạn Liên Viễn Phát</h1>
-                <p class="name-alt">Lien Vien Phat Hotel</p>
-                <div class="address">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <address>7A/1 Bùi Thị Xuân, Phường 2, Phường 2, Đà Lạt, Tỉnh Lâm Đồng, Việt Nam, 670000</address>
-                </div>
-              </div>
-              <div class="product-images js-product-images">
-                <img class="image" src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-d75934cedb26f92baf41c53e05d83103.jpeg?_src=imagekit&amp;tr=c-at_max,h-360,q-40,w-640" alt="" width="579" height="360" /><img
-                  class="image"
-                  src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-d75934cedb26f92baf41c53e05d83103.jpeg?_src=imagekit&amp;tr=c-at_max,h-360,q-40,w-640"
-                  alt=""
-                  width="579"
-                  height="360"
-                /><img class="image" src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-d75934cedb26f92baf41c53e05d83103.jpeg?_src=imagekit&amp;tr=c-at_max,h-360,q-40,w-640" alt="" width="579" height="360" /><img
-                  class="image"
-                  src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-d75934cedb26f92baf41c53e05d83103.jpeg?_src=imagekit&amp;tr=c-at_max,h-360,q-40,w-640"
-                  alt=""
-                  width="579"
-                  height="360"
-                /><img class="image" src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-d75934cedb26f92baf41c53e05d83103.jpeg?_src=imagekit&amp;tr=c-at_max,h-360,q-40,w-640" alt="" width="579" height="360" />
-              </div>
-            </div>
-            <div class="product-info-wrapper">
-              <span class="product-price">50.000.000 VND</span><a class="book-button" href="#">Book this room</a>
-              <p class="product-description">
-                Khách sạn rất ok, phòng sạch sẽ, nhân viên lễ tân - phục vụ rất dễ thương và nhiệt tình. gần chợ với trung tâm thành phố. Chắc chắn sẽ ghé lại dịp không xa. xin cám ơn Lien Vien Phat. Khách sạn rất ok, phòng sạch sẽ, nhân viên lễ tân - phục vụ rất dễ thương và nhiệt tình. gần chợ với
-                trung tâm thành phố. Chắc chắn sẽ ghé lại dịp không xa. xin cám ơn Lien Vien Phat.Khách sạn rất ok, phòng sạch sẽ, nhân viên lễ tân - phục vụ rất dễ thương và nhiệt tình. gần chợ với trung tâm thành phố. Chắc chắn sẽ ghé lại dịp không xa. xin cám ơn Lien Vien Phat.Khách sạn rất ok,
-                phòng sạch sẽ, nhân viên lễ tân - phục vụ rất dễ thương và nhiệt tình. gần chợ với trung tâm thành phố. Chắc chắn sẽ ghé lại dịp không xa. xin cám ơn Lien Vien Phat.
-              </p>
-              <iframe
-                class="product-map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15683.764190505612!2d107.2311777!3d10.661684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317509f206a02233%3A0x9bd72a12c653bc88!2zVOG6oXAgaMOzYSBUaGluaA!5e0!3m2!1sen!2s!4v1648970817207!5m2!1sen!2s"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
-            </div>
-            <div class="utility-wrapper wow fade-in" data-wow-offset="100">
-              <h3 class="utility-title">Tiện nghi khách sạn</h3>
-              <div class="inner-wrapper">
-                <ul class="basic-info">
-                  <li>
-                    <p>Số phòng</p>
-                    <span>4</span>
-                  </li>
-                  <li>
-                    <p>Diện tích</p>
-                    <span>80m2</span>
-                  </li>
-                  <li>
-                    <p>Ban công</p>
-                    <span>có</span>
-                  </li>
-                  <li>
-                    <p>View</p>
-                    <span>sông núi</span>
-                  </li>
-                  <li>
-                    <p>Trẻ em</p>
-                    <span>hỗ trợ</span>
-                  </li>
-                </ul>
-                <ul class="utility-list">
-                  <li class="utility-item"><i class="fa-solid fa-tv"></i><span>Truyền hình cáp</span></li>
-                  <li class="utility-item"><i class="fa-solid fa-tv"></i><span>Bàn làm việc</span></li>
-                  <li class="utility-item"><i class="fa-solid fa-tv"></i><span>Máy sấy tóc</span></li>
-                  <li class="utility-item"><i class="fa-solid fa-tv"></i><span>Minibar</span></li>
-                  <li class="utility-item"><i class="fa-solid fa-tv"></i><span>Tủ lạnh</span></li>
-                  <li class="utility-item"><i class="fa-solid fa-tv"></i><span>Phòng tắm vòi sen</span></li>
-                </ul>
-              </div>
-            </div>
-            <div class="nearby-wrapper wow fade-in" data-wow-offset="100">
-              <h3 class="nearby-title">Địa điểm lân cận</h3>
-              <ul class="nearby-list">
-                <li class="nearby-item">
-                  <i class="fa-solid fa-shop"></i>
-                  <h3 class="name">Chợ Đà Lạt/ Chợ Đêm Đà Lạt</h3>
-                  <p class="note">Mua sắm &amp; Quà lưu niệm</p>
-                </li>
-                <li class="nearby-item">
-                  <i class="fa-solid fa-shop"></i>
-                  <h3 class="name">Big C Dalat</h3>
-                  <p class="note">Mua sắm &amp; Quà lưu niệm</p>
-                </li>
-                <li class="nearby-item">
-                  <i class="fa-solid fa-shop"></i>
-                  <h3 class="name">Cáp treo Đà Lạt</h3>
-                  <p class="note">Hoạt động &amp; Trò chơi</p>
-                </li>
-                <li class="nearby-item">
-                  <i class="fa-solid fa-shop"></i>
-                  <h3 class="name">Chợ Đà Lạt/ Chợ Đêm Đà Lạt</h3>
-                  <p class="note">Mua sắm &amp; Quà lưu niệm</p>
-                </li>
-                <li class="nearby-item">
-                  <i class="fa-solid fa-shop"></i>
-                  <h3 class="name">Big C Dalat</h3>
-                  <p class="note">Mua sắm &amp; Quà lưu niệm</p>
-                </li>
-                <li class="nearby-item">
-                  <i class="fa-solid fa-shop"></i>
-                  <h3 class="name">Cáp treo Đà Lạt</h3>
-                  <p class="note">Hoạt động &amp; Trò chơi</p>
-                </li>
-              </ul>
-            </div>
-          </article>
-          <aside class="sidebar">
-            <div class="related-wrapper">
-              <h2 class="related-title">Khách sạn tương tự</h2>
-              <p class="related-description">Các khách sạn được ưa thích khác:</p>
-              <ul class="related-list">
-                <li class="related-item wow fade-in" data-wow-offset="100">
-                  <div class="left">
-                    <a class="related-image" href="#"
-                      ><img src="https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-28bc7ebcae9d49b23f8ce4b055944ceb.jpeg?_src=imagekit&amp;tr=c-at_max,h-144,q-40,w-287" alt="" width="150" height="150"
-                    /></a>
-                  </div>
-                  <div class="middle">
-                    <a class="related-name" href="#"> <h3>Moonstone Hotel Dalat</h3></a>
-                    <ul class="rating">
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                    </ul>
-                    <address class="address">Phường 2, Đà Lạt, Tỉnh Lâm Đồng</address>
-                  </div>
-                  <div class="right">
-                    <p class="price">850.000 VND</p>
-                    <a class="book-button" href="#">Book now</a>
-                  </div>
-                </li>
-                <li class="related-item wow fade-in" data-wow-offset="100">
-                  <div class="left">
-                    <a class="related-image" href="#"
-                      ><img src="https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-28bc7ebcae9d49b23f8ce4b055944ceb.jpeg?_src=imagekit&amp;tr=c-at_max,h-144,q-40,w-287" alt="" width="150" height="150"
-                    /></a>
-                  </div>
-                  <div class="middle">
-                    <a class="related-name" href="#"> <h3>Moonstone Hotel Dalat</h3></a>
-                    <ul class="rating">
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                    </ul>
-                    <address class="address">Phường 2, Đà Lạt, Tỉnh Lâm Đồng</address>
-                  </div>
-                  <div class="right">
-                    <p class="price">850.000 VND</p>
-                    <a class="book-button" href="#">Book now</a>
-                  </div>
-                </li>
-                <li class="related-item wow fade-in" data-wow-offset="100">
-                  <div class="left">
-                    <a class="related-image" href="#"
-                      ><img src="https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-28bc7ebcae9d49b23f8ce4b055944ceb.jpeg?_src=imagekit&amp;tr=c-at_max,h-144,q-40,w-287" alt="" width="150" height="150"
-                    /></a>
-                  </div>
-                  <div class="middle">
-                    <a class="related-name" href="#"> <h3>Moonstone Hotel Dalat</h3></a>
-                    <ul class="rating">
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                    </ul>
-                    <address class="address">Phường 2, Đà Lạt, Tỉnh Lâm Đồng</address>
-                  </div>
-                  <div class="right">
-                    <p class="price">850.000 VND</p>
-                    <a class="book-button" href="#">Book now</a>
-                  </div>
-                </li>
-                <li class="wow fade-in" data-wow-offset="100">
-                  <a class="banner-ads" href="#"><img src="../assets/img/related-banner.jpg" alt="" width="400" height="150" /></a>
-                </li>
-                <li class="related-item wow fade-in" data-wow-offset="100">
-                  <div class="left">
-                    <a class="related-image" href="#"
-                      ><img src="https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-28bc7ebcae9d49b23f8ce4b055944ceb.jpeg?_src=imagekit&amp;tr=c-at_max,h-144,q-40,w-287" alt="" width="150" height="150"
-                    /></a>
-                  </div>
-                  <div class="middle">
-                    <a class="related-name" href="#"> <h3>Moonstone Hotel Dalat</h3></a>
-                    <ul class="rating">
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                    </ul>
-                    <address class="address">Phường 2, Đà Lạt, Tỉnh Lâm Đồng</address>
-                  </div>
-                  <div class="right">
-                    <p class="price">850.000 VND</p>
-                    <a class="book-button" href="#">Book now</a>
-                  </div>
-                </li>
-                <li class="related-item wow fade-in" data-wow-offset="100">
-                  <div class="left">
-                    <a class="related-image" href="#"
-                      ><img src="https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-28bc7ebcae9d49b23f8ce4b055944ceb.jpeg?_src=imagekit&amp;tr=c-at_max,h-144,q-40,w-287" alt="" width="150" height="150"
-                    /></a>
-                  </div>
-                  <div class="middle">
-                    <a class="related-name" href="#"> <h3>Moonstone Hotel Dalat</h3></a>
-                    <ul class="rating">
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                    </ul>
-                    <address class="address">Phường 2, Đà Lạt, Tỉnh Lâm Đồng</address>
-                  </div>
-                  <div class="right">
-                    <p class="price">850.000 VND</p>
-                    <a class="book-button" href="#">Book now</a>
-                  </div>
-                </li>
-                <li class="related-item wow fade-in" data-wow-offset="100">
-                  <div class="left">
-                    <a class="related-image" href="#"
-                      ><img src="https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-28bc7ebcae9d49b23f8ce4b055944ceb.jpeg?_src=imagekit&amp;tr=c-at_max,h-144,q-40,w-287" alt="" width="150" height="150"
-                    /></a>
-                  </div>
-                  <div class="middle">
-                    <a class="related-name" href="#"> <h3>Moonstone Hotel Dalat</h3></a>
-                    <ul class="rating">
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                      <li><i class="fa-solid fa-star"></i></li>
-                    </ul>
-                    <address class="address">Phường 2, Đà Lạt, Tỉnh Lâm Đồng</address>
-                  </div>
-                  <div class="right">
-                    <p class="price">850.000 VND</p>
-                    <a class="book-button" href="#">Book now</a>
-                  </div>
-                </li>
-                <li class="wow fade-in" data-wow-offset="100">
-                  <a class="banner-ads" href="#"><img src="../assets/img/related-banner-02.jpg" alt="" width="400" height="438" /></a>
-                </li>
-              </ul>
-            </div>
-          </aside>
-          <div class="feedback-wrapper wow fade-in" data-wow-offset="100">
-            <div class="overall-feedback">
-              <span class="overall-score">9.0</span>
-              <ul class="score-detail">
-                <li>
-                  <span class="name">Tuyệt vời</span>
-                  <div class="bar js-bar" data-bar-value="80"><span></span></div>
-                  <span class="counter">80</span>
-                </li>
-                <li>
-                  <span class="name">Rất tốt</span>
-                  <div class="bar js-bar" data-bar-value="10"><span></span></div>
-                  <span class="counter">10</span>
-                </li>
-                <li>
-                  <span class="name">Hài lòng</span>
-                  <div class="bar js-bar" data-bar-value="07"><span></span></div>
-                  <span class="counter">7</span>
-                </li>
-                <li>
-                  <span class="name">Trung bình</span>
-                  <div class="bar js-bar" data-bar-value="03"><span></span></div>
-                  <span class="counter">3</span>
-                </li>
-                <li>
-                  <span class="name">Kém</span>
-                  <div class="bar js-bar" data-bar-value="00"><span></span></div>
-                  <span class="counter">0</span>
-                </li>
-              </ul>
-            </div>
-            <div class="customer-feedback">
-              <ul class="feedback-list">
-                <li class="feedback-item">
-                  <div class="feedback-user">
-                    <img
-                      class="user-image"
-                      src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/108036975_ACCOMMODATION_1647265747313_b135b70cd0b9a222?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                      alt=""
-                      width="64"
-                      height="64"
-                    />
-                    <div class="user-info">
-                      <p class="user-name">Trần Nguyễn Thanh Tú</p>
-                      <span class="feedback-date">16/02/2022 </span>
-                    </div>
-                  </div>
-                  <div class="feedback-score"><i class="fa-solid fa-star-half-stroke"></i><span>10 / 10</span></div>
-                  <ul class="feedback-tags">
-                    <li class="tag">Sạch sẽ</li>
-                    <li class="tag">Thoải mái</li>
-                    <li class="tag">Thức ăn ngon</li>
-                    <li class="tag">Cảnh đẹp</li>
-                  </ul>
-                  <p class="feedback-content">
-                    Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect! Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me
-                    a bit annoyed is the check in time is at 4pm. Besides that everything was perfect! Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect!
-                  </p>
-                  <ul class="feedback-images">
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                  </ul>
-                </li>
-                <li class="feedback-item">
-                  <div class="feedback-user">
-                    <img
-                      class="user-image"
-                      src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/108036975_ACCOMMODATION_1647265747313_b135b70cd0b9a222?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                      alt=""
-                      width="64"
-                      height="64"
-                    />
-                    <div class="user-info">
-                      <p class="user-name">Trần Nguyễn Thanh Tú</p>
-                      <span class="feedback-date">16/02/2022 </span>
-                    </div>
-                  </div>
-                  <div class="feedback-score"><i class="fa-solid fa-star-half-stroke"></i><span>10 / 10</span></div>
-                  <ul class="feedback-tags">
-                    <li class="tag">Sạch sẽ</li>
-                    <li class="tag">Thoải mái</li>
-                    <li class="tag">Thức ăn ngon</li>
-                    <li class="tag">Cảnh đẹp</li>
-                  </ul>
-                  <p class="feedback-content">
-                    Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect! Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me
-                    a bit annoyed is the check in time is at 4pm. Besides that everything was perfect! Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect!
-                  </p>
-                  <ul class="feedback-images">
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                  </ul>
-                </li>
-                <li class="feedback-item">
-                  <div class="feedback-user">
-                    <img
-                      class="user-image"
-                      src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/108036975_ACCOMMODATION_1647265747313_b135b70cd0b9a222?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                      alt=""
-                      width="64"
-                      height="64"
-                    />
-                    <div class="user-info">
-                      <p class="user-name">Trần Nguyễn Thanh Tú</p>
-                      <span class="feedback-date">16/02/2022 </span>
-                    </div>
-                  </div>
-                  <div class="feedback-score"><i class="fa-solid fa-star-half-stroke"></i><span>10 / 10</span></div>
-                  <ul class="feedback-tags">
-                    <li class="tag">Sạch sẽ</li>
-                    <li class="tag">Thoải mái</li>
-                    <li class="tag">Thức ăn ngon</li>
-                    <li class="tag">Cảnh đẹp</li>
-                  </ul>
-                  <p class="feedback-content">
-                    Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect! Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me
-                    a bit annoyed is the check in time is at 4pm. Besides that everything was perfect! Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect!
-                  </p>
-                  <ul class="feedback-images">
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                  </ul>
-                </li>
-                <li class="feedback-item">
-                  <div class="feedback-user">
-                    <img
-                      class="user-image"
-                      src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/108036975_ACCOMMODATION_1647265747313_b135b70cd0b9a222?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                      alt=""
-                      width="64"
-                      height="64"
-                    />
-                    <div class="user-info">
-                      <p class="user-name">Trần Nguyễn Thanh Tú</p>
-                      <span class="feedback-date">16/02/2022 </span>
-                    </div>
-                  </div>
-                  <div class="feedback-score"><i class="fa-solid fa-star-half-stroke"></i><span>10 / 10</span></div>
-                  <ul class="feedback-tags">
-                    <li class="tag">Sạch sẽ</li>
-                    <li class="tag">Thoải mái</li>
-                    <li class="tag">Thức ăn ngon</li>
-                    <li class="tag">Cảnh đẹp</li>
-                  </ul>
-                  <p class="feedback-content">
-                    Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect! Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me
-                    a bit annoyed is the check in time is at 4pm. Besides that everything was perfect! Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect!
-                  </p>
-                  <ul class="feedback-images">
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100"
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <footer class="footer">
-        <div class="wrapper">
-          <div class="left">
-            <a href="/"> <h2 class="logo">Homiestay.com</h2></a>
-            <ul class="social-list">
-              <li class="social-item">
-                <a class="social-link" href="#"> <i class="fa-brands fa-facebook-square"></i><span>Facebook</span></a>
-              </li>
-              <li class="social-item">
-                <a class="social-link" href="#"> <i class="fa-brands fa-instagram-square"></i><span>Instagram</span></a>
-              </li>
-              <li class="social-item">
-                <a class="social-link" href="#"> <i class="fa-brands fa-twitter-square"></i><span>Twitter</span></a>
-              </li>
-              <li class="social-item">
-                <a class="social-link" href="#"> <i class="fa-brands fa-youtube-square"></i><span>Youtube</span></a>
-              </li>
+      </div>
+      <div class="product-images js-product-images"><img class="image" src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-d75934cedb26f92baf41c53e05d83103.jpeg?_src=imagekit&amp;tr=c-at_max,h-360,q-40,w-640" alt="" width="770" height="479"/><img class="image" src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-d75934cedb26f92baf41c53e05d83103.jpeg?_src=imagekit&amp;tr=c-at_max,h-360,q-40,w-640" alt="" width="770" height="479"/><img class="image" src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-d75934cedb26f92baf41c53e05d83103.jpeg?_src=imagekit&amp;tr=c-at_max,h-360,q-40,w-640" alt="" width="770" height="479"/><img class="image" src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-d75934cedb26f92baf41c53e05d83103.jpeg?_src=imagekit&amp;tr=c-at_max,h-360,q-40,w-640" alt="" width="770" height="479"/><img class="image" src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-d75934cedb26f92baf41c53e05d83103.jpeg?_src=imagekit&amp;tr=c-at_max,h-360,q-40,w-640" alt="" width="770" height="479"/>
+      </div>
+    </div>
+    <div class="product-info-wrapper"><span class="product-price">50.000.000 VND</span><a class="book-button" href="#">Book this room</a>
+      <p class="product-description">Khách sạn rất ok, phòng sạch sẽ, nhân viên lễ tân - phục vụ rất dễ thương và nhiệt tình. gần chợ với trung tâm thành phố. Chắc chắn sẽ ghé lại dịp không xa. xin cám ơn Lien Vien Phat. Khách sạn rất ok, phòng sạch sẽ, nhân viên lễ tân - phục vụ rất dễ thương và nhiệt tình. gần chợ với trung tâm thành phố. Chắc chắn sẽ ghé lại dịp không xa. xin cám ơn Lien Vien Phat.Khách sạn rất ok, phòng sạch sẽ, nhân viên lễ tân - phục vụ rất dễ thương và nhiệt tình. gần chợ với trung tâm thành phố. Chắc chắn sẽ ghé lại dịp không xa. xin cám ơn Lien Vien Phat.Khách sạn rất ok, phòng sạch sẽ, nhân viên lễ tân - phục vụ rất dễ thương và nhiệt tình. gần chợ với trung tâm thành phố. Chắc chắn sẽ ghé lại dịp không xa. xin cám ơn Lien Vien Phat.</p>
+      <iframe class="product-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15683.764190505612!2d107.2311777!3d10.661684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317509f206a02233%3A0x9bd72a12c653bc88!2zVOG6oXAgaMOzYSBUaGluaA!5e0!3m2!1sen!2s!4v1648970817207!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="utility-wrapper wow fade-in" data-wow-offset="100">
+      <h3 class="utility-title">Tiện nghi khách sạn</h3>
+      <div class="inner-wrapper">
+        <ul class="basic-info">
+          <li>
+            <p>Số phòng</p><span>4</span>
+          </li>
+          <li>
+            <p>Diện tích</p><span>80m2</span>
+          </li>
+          <li>
+            <p>Ban công</p><span>có</span>
+          </li>
+          <li>
+            <p>View</p><span>sông núi</span>
+          </li>
+          <li>
+            <p>Trẻ em</p><span>hỗ trợ</span>
+          </li>
+        </ul>
+        <ul class="utility-list">
+          <li class="utility-item"><i class="fa-solid fa-tv"></i><span>Truyền hình cáp</span></li>
+          <li class="utility-item"><i class="fa-solid fa-tv"></i><span>Bàn làm việc</span></li>
+          <li class="utility-item"><i class="fa-solid fa-tv"></i><span>Máy sấy tóc</span></li>
+          <li class="utility-item"><i class="fa-solid fa-tv"></i><span>Minibar</span></li>
+          <li class="utility-item"><i class="fa-solid fa-tv"></i><span>Tủ lạnh</span></li>
+          <li class="utility-item"><i class="fa-solid fa-tv"></i><span>Phòng tắm vòi sen</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nearby-wrapper wow fade-in" data-wow-offset="100">
+      <h3 class="nearby-title">Địa điểm lân cận</h3>
+      <ul class="nearby-list">
+        <li class="nearby-item"><i class="fa-solid fa-shop"></i>
+          <h3 class="name">Chợ Đà Lạt/ Chợ Đêm Đà Lạt</h3>
+          <p class="note">Mua sắm &amp; Quà lưu niệm</p>
+        </li>
+        <li class="nearby-item"><i class="fa-solid fa-shop"></i>
+          <h3 class="name">Big C Dalat</h3>
+          <p class="note">Mua sắm &amp; Quà lưu niệm</p>
+        </li>
+        <li class="nearby-item"><i class="fa-solid fa-shop"></i>
+          <h3 class="name">Cáp treo Đà Lạt</h3>
+          <p class="note">Hoạt động &amp; Trò chơi</p>
+        </li>
+        <li class="nearby-item"><i class="fa-solid fa-shop"></i>
+          <h3 class="name">Chợ Đà Lạt/ Chợ Đêm Đà Lạt</h3>
+          <p class="note">Mua sắm &amp; Quà lưu niệm</p>
+        </li>
+        <li class="nearby-item"><i class="fa-solid fa-shop"></i>
+          <h3 class="name">Big C Dalat</h3>
+          <p class="note">Mua sắm &amp; Quà lưu niệm</p>
+        </li>
+        <li class="nearby-item"><i class="fa-solid fa-shop"></i>
+          <h3 class="name">Cáp treo Đà Lạt</h3>
+          <p class="note">Hoạt động &amp; Trò chơi</p>
+        </li>
+      </ul>
+    </div>
+  </article>
+  <aside class="sidebar">
+    <div class="related-wrapper">
+      <h2 class="related-title">Khách sạn tương tự</h2>
+      <p class="related-description">Các khách sạn được ưa thích khác:</p>
+      <ul class="related-list">
+        <li class="related-item wow fade-in" data-wow-offset="100">
+          <div class="left"><a class="related-image" href="#"><img src="https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-28bc7ebcae9d49b23f8ce4b055944ceb.jpeg?_src=imagekit&amp;tr=c-at_max,h-144,q-40,w-287" alt="" width="150" height="150"/></a></div>
+          <div class="middle"><a class="related-name" href="#">
+              <h3>Moonstone Hotel Dalat</h3></a>
+            <ul class="rating">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
             </ul>
+            <address class="address">Phường 2, Đà Lạt, Tỉnh Lâm Đồng</address>
           </div>
           <div class="right">
-            <ul class="footer-column">
-              <li class="footer-title">
-                <h3>Về Homiestay.com</h3>
-              </li>
-              <li class="footer-item"><a class="footer-link" href="#">Thông tin liên hệ</a></li>
-              <li class="footer-item"><a class="footer-link" href="#">Quy trình đặt phòng</a></li>
-              <li class="footer-item"><a class="footer-link" href="#">Chính sách đổi trả</a></li>
-              <li class="footer-item"><a class="footer-link" href="#">Tuyển dụng</a></li>
-            </ul>
-            <ul class="footer-column">
-              <li class="footer-title">
-                <h3>Chính sách</h3>
-              </li>
-              <li class="footer-item"><a class="footer-link" href="#">Chính sách quyền riêng tư</a></li>
-              <li class="footer-item"><a class="footer-link" href="#">Trợ giúp</a></li>
-              <li class="footer-item"><a class="footer-link" href="#">Đăng ký nơi nghỉ của bạn</a></li>
-              <li class="footer-item"><a class="footer-link" href="#">Khu vực báo chí</a></li>
-            </ul>
-            <ul class="footer-column">
-              <li class="footer-title">
-                <h3>Vấn đề khác</h3>
-              </li>
-              <li class="footer-item"><a class="footer-link" href="#">Đặt cọc</a></li>
-              <li class="footer-item"><a class="footer-link" href="#">Combo tiết kiệm</a></li>
-              <li class="footer-item"><a class="footer-link" href="#">Đặt quảng cáo</a></li>
-              <li class="footer-item"><a class="footer-link" href="#">Tải ứng dụng</a></li>
-            </ul>
+            <p class="price">850.000 VND</p><a class="book-button" href="#">Book now</a>
           </div>
-        </div>
-      </footer>
+        </li>
+        <li class="related-item wow fade-in" data-wow-offset="100">
+          <div class="left"><a class="related-image" href="#"><img src="https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-28bc7ebcae9d49b23f8ce4b055944ceb.jpeg?_src=imagekit&amp;tr=c-at_max,h-144,q-40,w-287" alt="" width="150" height="150"/></a></div>
+          <div class="middle"><a class="related-name" href="#">
+              <h3>Moonstone Hotel Dalat</h3></a>
+            <ul class="rating">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+            <address class="address">Phường 2, Đà Lạt, Tỉnh Lâm Đồng</address>
+          </div>
+          <div class="right">
+            <p class="price">850.000 VND</p><a class="book-button" href="#">Book now</a>
+          </div>
+        </li>
+        <li class="related-item wow fade-in" data-wow-offset="100">
+          <div class="left"><a class="related-image" href="#"><img src="https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-28bc7ebcae9d49b23f8ce4b055944ceb.jpeg?_src=imagekit&amp;tr=c-at_max,h-144,q-40,w-287" alt="" width="150" height="150"/></a></div>
+          <div class="middle"><a class="related-name" href="#">
+              <h3>Moonstone Hotel Dalat</h3></a>
+            <ul class="rating">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+            <address class="address">Phường 2, Đà Lạt, Tỉnh Lâm Đồng</address>
+          </div>
+          <div class="right">
+            <p class="price">850.000 VND</p><a class="book-button" href="#">Book now</a>
+          </div>
+        </li>
+        <li class="wow fade-in" data-wow-offset="100"><a class="banner-ads" href="#"><img src="../assets/img/related-banner.jpg" alt="" width="400" height="150"/></a></li>
+        <li class="related-item wow fade-in" data-wow-offset="100">
+          <div class="left"><a class="related-image" href="#"><img src="https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-28bc7ebcae9d49b23f8ce4b055944ceb.jpeg?_src=imagekit&amp;tr=c-at_max,h-144,q-40,w-287" alt="" width="150" height="150"/></a></div>
+          <div class="middle"><a class="related-name" href="#">
+              <h3>Moonstone Hotel Dalat</h3></a>
+            <ul class="rating">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+            <address class="address">Phường 2, Đà Lạt, Tỉnh Lâm Đồng</address>
+          </div>
+          <div class="right">
+            <p class="price">850.000 VND</p><a class="book-button" href="#">Book now</a>
+          </div>
+        </li>
+        <li class="related-item wow fade-in" data-wow-offset="100">
+          <div class="left"><a class="related-image" href="#"><img src="https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-28bc7ebcae9d49b23f8ce4b055944ceb.jpeg?_src=imagekit&amp;tr=c-at_max,h-144,q-40,w-287" alt="" width="150" height="150"/></a></div>
+          <div class="middle"><a class="related-name" href="#">
+              <h3>Moonstone Hotel Dalat</h3></a>
+            <ul class="rating">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+            <address class="address">Phường 2, Đà Lạt, Tỉnh Lâm Đồng</address>
+          </div>
+          <div class="right">
+            <p class="price">850.000 VND</p><a class="book-button" href="#">Book now</a>
+          </div>
+        </li>
+        <li class="related-item wow fade-in" data-wow-offset="100">
+          <div class="left"><a class="related-image" href="#"><img src="https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10025962-28bc7ebcae9d49b23f8ce4b055944ceb.jpeg?_src=imagekit&amp;tr=c-at_max,h-144,q-40,w-287" alt="" width="150" height="150"/></a></div>
+          <div class="middle"><a class="related-name" href="#">
+              <h3>Moonstone Hotel Dalat</h3></a>
+            <ul class="rating">
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+            <address class="address">Phường 2, Đà Lạt, Tỉnh Lâm Đồng</address>
+          </div>
+          <div class="right">
+            <p class="price">850.000 VND</p><a class="book-button" href="#">Book now</a>
+          </div>
+        </li>
+        <li class="wow fade-in" data-wow-offset="100"><a class="banner-ads" href="#"><img src="../assets/img/related-banner-02.jpg" alt="" width="400" height="438"/></a></li>
+      </ul>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="https://npmcdn.com/flatpickr/dist/l10n/vn.js"></script>
-    <script src="../assets/script.js"></script>
+  </aside>
+  <div class="feedback-wrapper wow fade-in" data-wow-offset="100">
+    <div class="overall-feedback"><span class="overall-score">9.0</span>
+      <ul class="score-detail">
+        <li><span class="name">Tuyệt vời</span>
+          <div class="bar js-bar" data-bar-value="80"><span></span></div><span class="counter">80</span>
+        </li>
+        <li><span class="name">Rất tốt</span>
+          <div class="bar js-bar" data-bar-value="10"><span></span></div><span class="counter">10</span>
+        </li>
+        <li><span class="name">Hài lòng</span>
+          <div class="bar js-bar" data-bar-value="07"><span></span></div><span class="counter">7</span>
+        </li>
+        <li><span class="name">Trung bình</span>
+          <div class="bar js-bar" data-bar-value="03"><span></span></div><span class="counter">3</span>
+        </li>
+        <li><span class="name">Kém</span>
+          <div class="bar js-bar" data-bar-value="00"><span></span></div><span class="counter">0</span>
+        </li>
+      </ul>
+    </div>
+    <div class="customer-feedback">
+      <ul class="feedback-list">
+        <li class="feedback-item">
+          <div class="feedback-user"><img class="user-image" src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/108036975_ACCOMMODATION_1647265747313_b135b70cd0b9a222?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="64" height="64"/>
+            <div class="user-info">
+              <p class="user-name">Trần Nguyễn Thanh Tú</p><span class="feedback-date">16/02/2022 </span>
+            </div>
+          </div>
+          <div class="feedback-score"><i class="fa-solid fa-star-half-stroke"></i><span>10 / 10</span></div>
+          <ul class="feedback-tags">
+            <li class="tag">Sạch sẽ</li>
+            <li class="tag">Thoải mái</li>
+            <li class="tag">Thức ăn ngon</li>
+            <li class="tag">Cảnh đẹp</li>
+          </ul>
+          <p class="feedback-content">Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect! Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect! Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect!</p>
+          <ul class="feedback-images">
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+          </ul>
+        </li>
+        <li class="feedback-item">
+          <div class="feedback-user"><img class="user-image" src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/108036975_ACCOMMODATION_1647265747313_b135b70cd0b9a222?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="64" height="64"/>
+            <div class="user-info">
+              <p class="user-name">Trần Nguyễn Thanh Tú</p><span class="feedback-date">16/02/2022 </span>
+            </div>
+          </div>
+          <div class="feedback-score"><i class="fa-solid fa-star-half-stroke"></i><span>10 / 10</span></div>
+          <ul class="feedback-tags">
+            <li class="tag">Sạch sẽ</li>
+            <li class="tag">Thoải mái</li>
+            <li class="tag">Thức ăn ngon</li>
+            <li class="tag">Cảnh đẹp</li>
+          </ul>
+          <p class="feedback-content">Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect! Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect! Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect!</p>
+          <ul class="feedback-images">
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+          </ul>
+        </li>
+        <li class="feedback-item">
+          <div class="feedback-user"><img class="user-image" src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/108036975_ACCOMMODATION_1647265747313_b135b70cd0b9a222?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="64" height="64"/>
+            <div class="user-info">
+              <p class="user-name">Trần Nguyễn Thanh Tú</p><span class="feedback-date">16/02/2022 </span>
+            </div>
+          </div>
+          <div class="feedback-score"><i class="fa-solid fa-star-half-stroke"></i><span>10 / 10</span></div>
+          <ul class="feedback-tags">
+            <li class="tag">Sạch sẽ</li>
+            <li class="tag">Thoải mái</li>
+            <li class="tag">Thức ăn ngon</li>
+            <li class="tag">Cảnh đẹp</li>
+          </ul>
+          <p class="feedback-content">Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect! Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect! Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect!</p>
+          <ul class="feedback-images">
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+          </ul>
+        </li>
+        <li class="feedback-item">
+          <div class="feedback-user"><img class="user-image" src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/108036975_ACCOMMODATION_1647265747313_b135b70cd0b9a222?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="64" height="64"/>
+            <div class="user-info">
+              <p class="user-name">Trần Nguyễn Thanh Tú</p><span class="feedback-date">16/02/2022 </span>
+            </div>
+          </div>
+          <div class="feedback-score"><i class="fa-solid fa-star-half-stroke"></i><span>10 / 10</span></div>
+          <ul class="feedback-tags">
+            <li class="tag">Sạch sẽ</li>
+            <li class="tag">Thoải mái</li>
+            <li class="tag">Thức ăn ngon</li>
+            <li class="tag">Cảnh đẹp</li>
+          </ul>
+          <p class="feedback-content">Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect! Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect! Very good facilities, nice and friendly staff. Food is great here too! The only thing that made me a bit annoyed is the check in time is at 4pm. Besides that everything was perfect!</p>
+          <ul class="feedback-images">
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+            <li><img src="https://ik.imagekit.io/tvlk/ugc-review/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/ugc-photo-ap-southeast-1-581603780057-acd24e232f75f09e/ACCOMMODATION/141287437_ACCOMMODATION_1642496020513_135c0cd15a468aa9?_src=imagekit&amp;tr=h-100,q-40,w-100" alt="" width="100" height="100"/></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+    </main>
+    
+<footer class="footer">
+  <div class="wrapper">
+    <div class="left"><a href="/">
+        <h2 class="logo">Homiestay.com</h2></a>
+      <ul class="social-list">
+        <li class="social-item"><a class="social-link" href="#"> <i class="fa-brands fa-facebook-square"></i><span>Facebook</span></a></li>
+        <li class="social-item"><a class="social-link" href="#"> <i class="fa-brands fa-instagram-square"></i><span>Instagram</span></a></li>
+        <li class="social-item"><a class="social-link" href="#"> <i class="fa-brands fa-twitter-square"></i><span>Twitter</span></a></li>
+        <li class="social-item"><a class="social-link" href="#"> <i class="fa-brands fa-youtube-square"></i><span>Youtube</span></a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <ul class="footer-column">
+        <li class="footer-title">
+          <h3>Về Homiestay.com</h3>
+        </li>
+        <li class="footer-item"><a class="footer-link" href="#">Thông tin liên hệ</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Quy trình đặt phòng</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Chính sách đổi trả</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Tuyển dụng</a></li>
+      </ul>
+      <ul class="footer-column">
+        <li class="footer-title">
+          <h3>Chính sách</h3>
+        </li>
+        <li class="footer-item"><a class="footer-link" href="#">Chính sách quyền riêng tư</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Trợ giúp</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Đăng ký nơi nghỉ của bạn</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Khu vực báo chí</a></li>
+      </ul>
+      <ul class="footer-column">
+        <li class="footer-title">
+          <h3>Vấn đề khác</h3>
+        </li>
+        <li class="footer-item"><a class="footer-link" href="#">Đặt cọc</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Combo tiết kiệm</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Đặt quảng cáo</a></li>
+        <li class="footer-item"><a class="footer-link" href="#">Tải ứng dụng</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/vn.js"></script>
+<script src="../assets/script.js"></script>
   </body>
 </html>
